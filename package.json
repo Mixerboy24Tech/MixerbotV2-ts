@@ -1,0 +1,43 @@
+{
+  "name": "mixerbot",
+  "version": "4.3.1",
+  "description": "Miksaaja City yhteisön oma Botti.",
+  "author": {
+    "email": "admin@miksaaja.city",
+    "name": "Atte 'Mixerboy24' Oksanen"
+  },
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://miksaaja.city",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node .",
+    "build": "tsup src/index.ts --minify",
+    "format": "prettier --write \"**/*.{json,ts}\"",
+    "lint": "eslint . --ext ts --fix"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "fs.promises": "^0.1.2",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "ssh2-sftp-client": "^10.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@types/ssh2-sftp-client": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.8.4",
+    "tsup": "^6.6.0",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
+  }
+}
