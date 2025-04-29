@@ -18,7 +18,7 @@
     "lint": "eslint . --ext ts --fix"
   },
   "dependencies": {
-    "discord.js": "^14.7.1",
+    "discord.js": "^14.19.2",
     "dotenv": "^16.0.3",
     "fs.promises": "^0.1.2",
     "node-fetch": "^3.3.2",
